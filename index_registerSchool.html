@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Register Form</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body
+        {
+            background-color: #fefefe;
+        }
+
+        #card{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;
+            text-align: center;
+            width: 1440px;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            border-radius: 16px;
+            gap: 3rem;
+        }
+        #root{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            
+        }
+        .img{
+            max-width: 400px;
+        }
+        #right-stack{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            justify-content: center;
+            align-items: flex-start;
+            width: max-content;
+            gap: 1.2rem;
+            
+        }
+        .sidebyside-stack{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            gap: 1rem;
+        }
+
+        .sidebyside-stack-right{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+            gap: 1rem;
+        }
+
+        .max-w{
+            width: 100%;
+        }
+
+        button{
+            background-color: #fd6800;
+            padding: 1rem;
+            border: none;
+            color: white;
+        }
+
+        input{
+            border: 1px solid rgb(119, 119, 119);
+            height: 25px;
+            background-color: white;
+        }
+
+        #grey{
+            background-color: grey;
+        }
+
+        p{
+            margin-bottom: 0.1rem;
+        }
+
+        #pad{
+            padding-left: 1rem; padding-right: 1rem;
+        }
+
+        @media screen and (max-width:700px) {
+            #root{
+                display: block;
+            }
+            #card{
+                max-width: 100vw;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            #right-stack{
+                align-items: center;
+                justify-content: center;
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            .img{
+                max-width: 200px;
+                margin-top: 2rem;
+            }
+            #pad{
+                padding: 0;
+                width: 300px;
+            }
+            .sidebyside-stack{
+                flex-direction: column;
+            }
+            .max-w{
+                width: 90%;
+            }
+            .sidebyside-stack-right{
+                justify-content: center;
+                margin-bottom: 2rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="root">
+        <div id="card">
+            <div>
+                <img class="img" src="student.jpg">
+            </div>
+            <div id="right-stack">
+                <h1 id="pad">Student Registration Form</h1>
+                <div class="sidebyside-stack">
+                    <div class="max-w">
+                        <p><strong>Name:</strong></p>
+                        <input class="max-w" type="text">
+                    </div>
+                    <div class="max-w">
+                        <p><strong>Father Name:</strong></p>
+                        <input class="max-w" type="text">
+                    </div>
+                </div>
+                <div class="max-w">
+                    <p><strong>Adress:</strong></p>
+                    <input class="max-w" type="text">
+                </div>
+                <div class="sidebyside-stack">
+                    <p><strong>Gender:</strong></p>
+                    <input type="radio"> Male
+                    <input type="radio"> Female
+                </div>
+                <div class="sidebyside-stack">
+                    <div class="max-w">
+                        <p><strong>State:</strong></p>
+                        <input class="max-w" type="text">
+                    </div>
+                    <div class="max-w">
+                        <p><strong>City:</strong></p>
+                        <input class="max-w" type="text">
+                    </div>
+                </div>
+                <div class="max-w">
+                    <p><strong>DOB:</strong></p>
+                    <input class="max-w" type="text">
+                </div>
+                <div class="max-w">
+                    <p><strong>Pincode:</strong></p>
+                    <input class="max-w" type="text">
+                </div>
+                <div class="max-w">
+                    <p><strong>Course:</strong></p>
+                    <input class="max-w" type="text">
+                </div>
+                <div class="max-w">
+                    <p><strong>Email ID:</strong></p>
+                    <input class="max-w" type="text">
+                </div>
+                <div class="sidebyside-stack-right">
+                    <button id="grey" >Reset All</button>
+                    <button>Submit Form</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

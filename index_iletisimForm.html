@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contact Form</title>
+    <style>
+        body{
+            background-color: #fafafa;
+        }
+        #root{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;   
+        }
+        #card{
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 900px;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            border-radius: 20px;
+        }
+
+        .imgc{
+            background-color: #68afce;
+            color: white;
+            border-radius: 100%;
+            padding: 1rem;
+            width: 20px;
+
+        }
+
+        .sidebyside-container{
+            display: flex;
+            flex-direction: row;
+            gap: 4rem;
+            
+        }
+
+        .imgc-c{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        #form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fafafa;
+            border-radius: 16px;
+            padding: 1rem;
+            width: 100%;
+        }
+
+        #kurt{
+            max-width: 300px;
+        }
+
+        .max-w{
+            width: 100%;
+            text-align: left;
+        }
+
+        button{
+            background-color: rgb(39, 239, 239);
+            border: none;
+            border-radius: 16px;
+            padding: 0.8rem;
+            margin-top: 1rem;
+            align-self: flex-start;
+            min-width: 100px;
+        }
+
+        #form-tepe{
+            display: flex; flex-direction: row; gap:3rem; margin-top: 2rem;
+        }
+
+        input{
+            border-radius: 10px;
+            border: 1px solid black;
+            padding: 0.3rem;
+        }
+
+        @media screen and (max-width:700px) {
+            #root{
+                display: block;
+            }
+            #card{
+                max-width: 100vw;
+            }
+            .sidebyside-container{
+                flex-direction: column;
+            }
+            #form-tepe{
+                flex-direction: column;
+                gap: 0rem;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <div id="card">
+            <h1>Contact Form #03</h1>
+            <div class="sidebyside-container">
+                <div class="imgc-c"><div class="imgc"><i class="fa-solid fa-location-dot"></i></div><strong>Adress:</strong> bla bla bla sokak bla bla sd sd</div>
+                <div class="imgc-c"><div class="imgc"><i class="fa-solid fa-phone"></i></div><strong>Phone:</strong> 243 39432 39473</div>
+                <div class="imgc-c"><div class="imgc"><i class="fa-solid fa-paper-plane"></i></div><strong>Email:</strong> skfdhs@gmail.com</div>
+                <div class="imgc-c"><div class="imgc"><i class="fa-solid fa-globe"></i></div><strong>Website:</strong> yoursite.com</div>
+            </div>
+            <div id="form-tepe">
+                <div id="form">
+                    <h1 style="align-self: flex-start;">Contact Us</h1>
+                    <div class="sidebyside-container max-w">
+                        <div class="max-w">
+                            <p><strong>Full Name</strong></p>
+                            <input class="max-w" type="text" placeholder="Name">
+                        </div>
+                        <div class="max-w">
+                            <p><strong>Email Adress</strong></p>
+                            <input class="max-w" type="text" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="max-w">
+                        <p>Subject</p>
+                        <input class="max-w" type="text" placeholder="Subject">
+                    </div>
+                    <div class="max-w">
+                        <p>Message</p>
+                        <input class="max-w" type="text" placeholder="Message">
+                    </div>
+                    <button><strong>Send</strong></button>
+                </div>
+                <img id="kurt" src="kurt.webp">
+            </div>
+            <br>
+        </div>
+    </div>
+</body>
+</html>

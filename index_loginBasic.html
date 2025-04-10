@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body
+        {
+            background-color: #f9f9f9
+        }
+
+        #card{
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;
+            text-align: center;
+            width: 1440px;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            border-radius: 16px;
+            gap: 3rem;
+        }
+        #root{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            
+        }
+
+        #img{
+            max-width: 400px;
+        }
+
+        #right-side{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            height: 100%;
+        }
+
+        #stack-side{
+            display: grid;
+            grid-template-columns: auto auto;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        input{
+            width: 100%;
+            height: 40px;
+            background-color: #eef2f5;
+            border: none;
+        }
+
+        button{
+            background-color: #6d66f4;
+            color: white;
+            border: none;
+            padding: 1rem;
+            border-radius: 16px;
+            width: 200px;
+            align-self: center;
+            margin-top: 1rem;
+        }
+
+        .faded{
+            color: rgb(103, 103, 103)
+        }
+
+        @media screen and (max-width:700px) {
+            #root{
+                display: block;
+                width: 100vw;
+            }
+            #card{
+                max-width: 100vw;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+            #right-side{
+                justify-content: center;
+                padding-right: 1rem;
+                padding-left: 1rem;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <div id="card">
+            <div>
+                <img id="img" src="corp.svg">
+            </div>
+            <div id="right-side">
+                <br>
+                <h1>Sign Up</h1>
+                <br>
+                <p class="faded">Lorem ipsum dolor sit amet consecis doloremque psum dolor sit amet consecis</p>
+                <br>
+                <div id="right-side" style="width: 100%; background-color: #eef2f5; border-radius: 16px; padding: 0.5rem;">
+                    <p>Name</p>
+                    <input type="text" name="" id="">
+                    <p>Email</p>
+                    <input type="text" name="" id="">
+                    <p>Password</p>
+                    <input type="text" name="" id="">
+                    <p>Password Again</p>
+                    <input type="text" name="" id="">
+                </div>
+                <br>
+                <div id="stack-side">
+                    <input type="checkbox"><p>Creating a account means youre okay with whatever this is</p>
+                </div>
+                <button>Register</button>
+                <br>
+                <p  class="faded">--- or register with: </p>
+                <br>
+                <div style="display: flex; gap: 1rem;">
+                    <div style="color:white; background-color: rgb(39, 54, 255); padding: 1rem; border-radius: 100%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;""><i class="fa-brands fa-facebook-f fa-xl"></i></div>
+                    <div style="color:white; background-color: rgb(255, 50, 50); padding: 1rem; border-radius: 100%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;""><i class="fa-brands fa-google fa-xl"></i></div>
+                    <div style="color:white; background-color: rgb(0, 234, 255); padding: 1rem; border-radius: 100%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;"><i class="fa-brands fa-twitter fa-xl"></i></div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
